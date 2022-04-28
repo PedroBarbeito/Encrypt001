@@ -21,7 +21,7 @@ namespace Encrypt001
         /// <exception cref="ArgumentNullException"/>
         public ProtectedJsonConfigurationSource(byte[] entropy)
         {
-            this.Entropy = entropy ?? throw new ArgumentNullException(Localization.EntropyNotSpecifiedError);
+            this.Entropy = entropy ?? throw new ArgumentNullException(null);
         }
 
         /// <summary>Builds the configuration provider</summary>
